@@ -693,6 +693,41 @@ header .navbar.navbar-expand-lg .nav-item:hover .dropdown-toggle:after {
 #investPage .investorsMap ul li.c5:before {
     background: #67686c;
 }
+/*========================== BUY TOKEN ==========================*/
+#buyTokenPage .banner {
+	padding: 80px 0;
+	background: url(../img/banner-buy-token.jpg) no-repeat center center / cover;
+}
+#buyTokenPage .banner form {
+	background: #f2fafb;
+}
+#buyTokenPage .banner .card {
+	border: none;
+	background: #f2fafb;
+}
+#buyTokenPage .banner .card-header {
+	background: #0399b5;
+	text-align: center;
+	color: #fff;
+}
+#buyTokenPage .banner .card-body {
+	padding: 40px;
+}
+#buyTokenPage .banner .card-body .icon {
+	width: 220px;
+	display: block;
+	margin: 0 auto 60px;
+}
+#buyTokenPage .banner input {
+	padding: 10px 10px 10px 45px;
+	background: no-repeat center left 8px / 25px;
+}
+#buyTokenPage .banner input.input-cmc {
+	background-image: url(../img/icon-cmc.png);
+}
+#buyTokenPage .banner input.input-ftx {
+	background-image: url(../img/icon-ftx.png);
+}
 /*========================== PAGINATE ==========================*/
 .pagination {
 	margin: 30px 0;

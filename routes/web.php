@@ -19,7 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
-Route::get('/cmc-invest', function () {
+Route::get('/invest', function () {
     return view('invest');
 })->name('invest');
 
