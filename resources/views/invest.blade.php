@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-
-	<h1>Comming soon</h1>
-		
+	<div id="buyToken">
+		<section class="p-0">
+			<img src="{{ asset('img/banner-buy-token.jpg') }}" class="w-100">
+		</section>
+	</div>		
 @endsection

@@ -35,29 +35,6 @@
 
 		<!-- Header -->
 		<header>
-			<div class="top">
-				<ul class="list-unstyled d-flex align-items-center justify-content-end m-0">
-					<li class="link">
-						<a href="#">Buy CMC</a>
-						<a href="#">Support</a>
-					</li>
-					<li class="search">
-						<i class="fas fa-search" aria-hidden="true"></i>
-					</li>
-					<li class="language">
-						<div class="dropdown">
-							<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-								English <i class="fas fa-globe"></i>
-							</button>
-							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-								<li><a class="dropdown-item" href="#">Action</a></li>
-								<li><a class="dropdown-item" href="#">Another action</a></li>
-								<li><a class="dropdown-item" href="#">Something else here</a></li>
-							</ul>
-						</div>
-					</li>		
-				</ul>
-			</div>
 			<nav class="navbar navbar-expand-lg bg-light">
 				<a class="navbar-brand" href="{{ route('home') }}">
 					<img src="{{ asset('img/logo.png') }}" alt="">
@@ -70,24 +47,15 @@
 						<li class="nav-item">
 							<a class="nav-link  {{ str_contains(Route::currentRouteName(), 'home') ? 'active' : '' }}" href="{{ route('home') }}" aria-current="page" href="#">Home</a>
 						</li>
-
 						<li class="nav-item">
-							<a class="nav-link  {{ str_contains(Route::currentRouteName(), 'invest') ? 'active' : '' }}" href="{{ route('invest') }}" aria-current="page">CMC Invest</a>
+							<a class="nav-link" href="#">Whitepaper</a>
 						</li>
-						
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle {{ str_contains(Route::currentRouteName(), 'external.') ? 'active' : '' }}" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								External Resourcus
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="javascript:void(0)">CMC Invest</a></li>
-								<li><a class="dropdown-item" href="javascript:void(0)">CMC Foundation</a></li>
-								<li><a class="dropdown-item" href="javascript:void(0)">Diasplat</a></li>
-								<li><a class="dropdown-item" href="javascript:void(0)">Onstora</a></li>
-								<li><a class="dropdown-item" href="javascript:void(0)">Payment Gate</a></li>
-							</ul>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Smart Contract</a>
 						</li>
-						                          
+						<li class="nav-item">
+							<a class="nav-link" href="#">Connect</a>
+						</li>
 					</ul>
 				</div>
 			</nav>
@@ -230,7 +198,84 @@
 				items: 3,
 			   	loop: true,
 			   	nav: true,
-			})
+			});
+			// Set the date we're counting down to
+			var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+
+			// Update the count down every 1 second
+			var x = setInterval(function() {
+
+			  // Get today's date and time
+			  var now = new Date().getTime();
+
+			  // Find the distance between now and the count down date
+			  var distance = countDownDate - now;
+
+			  // Time calculations for days, hours, minutes and seconds
+			  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			  document.getElementById("countdown").innerHTML ="<div class='row g-0'>" 
+			  + 	"<div class='col-md-3'>"
+			  +			"<div class='item'>"
+			  +				"<div class='number'>" + days + "</div>"
+			  +				"<div class='bottom'>days</div>"
+			  +			"</div>"
+			  +		"</div>"
+			  + 	"<div class='col-md-3'>"
+			  +			"<div class='item'>"
+			  +				"<div class='number'>" + hours + "</div>"
+			  +				"<div class='bottom'>hours</div>"
+			  +			"</div>"
+			  +		"</div>"
+			  + 	"<div class='col-md-3'>"
+			  +			"<div class='item'>"
+			  +				"<div class='number'>" + minutes + "</div>"
+			  +				"<div class='bottom'>min</div>"
+			  +			"</div>"
+			  +		"</div>"
+			  + 	"<div class='col-md-3'>"
+			  +			"<div class='item'>"
+			  +				"<div class='number'>" + seconds + "</div>"
+			  +				"<div class='bottom'>sec</div>"
+			  +			"</div>"
+			  +		"</div>"
+			  + "</div>";
+
+			  document.getElementById("countdown-1").innerHTML ="<div class='row g-0'>" 
+			  + 	"<div class='col-md-3'>"
+			  +			"<div class='item'>"
+			  +				"<div class='number'>" + days + "</div>"
+			  +				"<div class='bottom'>days</div>"
+			  +			"</div>"
+			  +		"</div>"
+			  + 	"<div class='col-md-3'>"
+			  +			"<div class='item'>"
+			  +				"<div class='number'>" + hours + "</div>"
+			  +				"<div class='bottom'>hours</div>"
+			  +			"</div>"
+			  +		"</div>"
+			  + 	"<div class='col-md-3'>"
+			  +			"<div class='item'>"
+			  +				"<div class='number'>" + minutes + "</div>"
+			  +				"<div class='bottom'>min</div>"
+			  +			"</div>"
+			  +		"</div>"
+			  + 	"<div class='col-md-3'>"
+			  +			"<div class='item'>"
+			  +				"<div class='number'>" + seconds + "</div>"
+			  +				"<div class='bottom'>sec</div>"
+			  +			"</div>"
+			  +		"</div>"
+			  + "</div>";
+	
+			  if (distance < 0) {
+			    clearInterval(x);
+			    document.getElementById("countdown").innerHTML = "EXPIRED";
+			  }
+			}, 1000);
 		</script>	
         @stack('script')
 	</body>
