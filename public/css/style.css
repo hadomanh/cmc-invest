@@ -815,10 +815,105 @@ footer .copyright {
 	
 }
 @media (max-width: 992px) {
-	
+	header .navbar-toggler:focus {
+		box-shadow: none;
+	}
+	header .navbar .dropdown-toggle:after {
+		transform: none;
+		left: auto;
+		right: 10px;
+		bottom: auto;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	header .navbar-collapse {
+		padding-top: 20px;
+	}
+	header .navbar.navbar-expand-lg .nav-link {
+		padding: 8px 10px;
+	}
+	.nav-tabs .nav-item .nav-link {
+		padding: 10px;
+	}
+	#investPage .startSale .circle {
+		margin-bottom: 20px;
+	}
 }
 @media (max-width: 768px) {
-	
+	section {
+		padding: 20px 0;
+	}
+	section .sectionHeading {
+		font-size: 22px;
+	}
+	section .sectionSubHeading {
+		font-size: 18px;
+	}
+	header .navbar {
+		padding: 0 10px;
+	}
+	#investPage .startSale .circle {
+	    width: 340px;
+	    height: 340px;
+	    padding: 15px;
+	}
+	#investPage .startSale .circle .inner {
+		padding: 20px 30px;
+	}
+	#investPage .startSale .circle h5 {
+		font-size: 16px;
+	}
+	#investPage .startSale .circle .btn {
+		padding: 5px 15px;
+	}
+	#investPage .startSale .info .text {
+		margin-bottom: 10px;
+	}
+	#investPage .startSale .progress {
+		height: 30px;
+		margin: 5px 0 10px;
+		font-size: 16px;
+	}
+	#investPage .startSale .rate {
+		font-size: 14px;
+		margin: 5px 0;
+	}
+	#investPage .notice {
+		font-size: 14px;
+		padding: 10px 15px;
+	}
+	#investPage .notice img {
+		width: 50px;
+	}
+	#investPage #countdown .item {
+		width: 80px;
+	}
+	#investPage #countdown-1 .item {
+		width: 50px;
+	}
+	#investPage #countdown-1 .number {
+		font-size: 28px;
+		padding: 5px;
+	}
+	#investPage #countdown-1 .bottom {
+		font-size: 10px;
+		padding: 5px;
+	}	
+	#investPage .useCase .inner {
+		min-height: initial;
+	}
+	#investPage .tokenomics .total ul {
+		margin: 0 0 10px;
+	}
+	#investPage .tokenomics .textPink {
+		overflow-wrap: break-word;
+	}
+	#buyTokenPage .banner {
+		padding: 50px 0;
+	}
+	#buyTokenPage .banner .card-body {
+		padding: 20px;
+	}
 }
 @media (max-width: 576px) {
 	

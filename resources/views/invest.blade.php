@@ -5,7 +5,7 @@
 		<section class="banner">
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-md-5">
+					<div class="col-lg-5 col-md-7">
 						<div class="card">
 							<h4 class="card-header fw-mediun">Sale</h4>
 							<div class="card-body">

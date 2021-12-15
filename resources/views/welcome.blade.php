@@ -25,10 +25,27 @@
 				<div class="fs-4 fst-italic">Whitelist Now Open: <i class="fab fa-twitter-square text-blue"></i></div>
 			</div>
 		</section>
-		<section class="startSale">
+		<section class="startSale d-none_">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 info">
+					<div class="col-lg-6 col-12 order-lg-2">
+						<div class="circle">
+							<div class="inner">
+								<h5>Starting time</h5>
+								<div id="countdown-1"></div>
+								<div class="progress">
+									<div class="progress-bar bgGradPurple" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+								</div>
+								<div class="d-flex justify-content-between">
+									<div>2125004.30 CMCchain</div>
+									<div>3,500,000 CMCchain</div>
+								</div>
+								<div class="rate">Tokens Exchange rate<br>1CMCchain = 0.9$</div>
+								<a href="#" class="btn btnOutlineRed">Buy Tokens</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12 info order-lg-1">
 						<h5 class="text textPink text-uppercase text-center">CMCCHAIN PUBLIC SALE IS COMING!</h5>
 						<h3 class="text text-center text-uppercase">Public sale round event Count Down</h3>
 						<h5 class="text text-center text-blue">We will hold double initial Dex offering and a initial Exchange offering on 20th November 2021 on the following platforms:</h5>
@@ -84,23 +101,6 @@
 							</div>
 							<div class="col-md-6 d-grid">
 								<a href="#" class="btn btnGrad sm">Connect Wallet</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="circle">
-							<div class="inner">
-								<h5>Starting time</h5>
-								<div id="countdown-1"></div>
-								<div class="progress">
-									<div class="progress-bar bgGradPurple" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-								</div>
-								<div class="d-flex justify-content-between">
-									<div>2125004.30 CMCchain</div>
-									<div>3,500,000 CMCchain</div>
-								</div>
-								<div class="rate">Tokens Exchange rate<br>1CMCchain = 0.9$</div>
-								<a href="#" class="btn btnOutlineRed">Buy Tokens</a>
 							</div>
 						</div>
 					</div>
@@ -195,13 +195,13 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col-md-6 text-center">
+					<div class="col-md-6 text-center d-md-block d-none">
 						<img src="{{ asset('img/icon-coin-1.jpg') }}">
 					</div>
 				</div>
 				<div class="row chart align-items-center">
 					<div class="col-md-6">
-						<img src="{{ asset('img/icon-tokenomic.png') }}">
+						<p><img src="{{ asset('img/icon-tokenomic.png') }}"></p>
 					</div>
 					<div class="col-md-6">
 						<div class="total">
@@ -237,106 +237,110 @@
 				<h2 class="sectionHeading underline text-uppercase">Fundraising</h2>
 				<div class="saleRound">
 					<h4 class="text-uppercase">Sales Rounds</h4>
-					<table class="table table-bordered text-center">
-						<thead>
-							<tr>
-								<th>Date</th>
-								<th>Round</th>
-								<th>Token Price ($)</th>
-								<th>Token Allocation</th>
-								<th>Token Amount (CMCCHAIN)</th>
-								<th>Raised ($)</th>
-								<th>Status</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Aug 2021</td>
-								<td>Seed round</td>
-								<td>0.0001</td>
-								<td>5%</td>
-								<td>5,000,000,000</td>
-								<td>500,000</td>
-								<td>Closed</td>
-							</tr>
-							<tr>
-								<td>Aug 2021</td>
-								<td>Private Sale</td>
-								<td>0.00013</td>
-								<td>11%</td>
-								<td>11,000,000,000</td>
-								<td>1,430,000</td>
-								<td>Closed</td>
-							</tr>
-							<tr>
-								<td>Oct 2021</td>
-								<td>Pre - Sale</td>
-								<td>0.00018</td>
-								<td>16%</td>
-								<td>16,000,000,000</td>
-								<td>2,880,000</td>
-								<td>Closed</td>
-							</tr>
-							<tr>
-								<td>Nov 2021</td>
-								<td>Public Sale</td>
-								<td>0.00025</td>
-								<td>1.2%</td>
-								<td>1,200,000,000</td>
-								<td>300,000</td>
-								<td></td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="table-responsive">
+						<table class="table table-bordered text-center">
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Round</th>
+									<th>Token Price ($)</th>
+									<th>Token Allocation</th>
+									<th>Token Amount (CMCCHAIN)</th>
+									<th>Raised ($)</th>
+									<th>Status</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Aug 2021</td>
+									<td>Seed round</td>
+									<td>0.0001</td>
+									<td>5%</td>
+									<td>5,000,000,000</td>
+									<td>500,000</td>
+									<td>Closed</td>
+								</tr>
+								<tr>
+									<td>Aug 2021</td>
+									<td>Private Sale</td>
+									<td>0.00013</td>
+									<td>11%</td>
+									<td>11,000,000,000</td>
+									<td>1,430,000</td>
+									<td>Closed</td>
+								</tr>
+								<tr>
+									<td>Oct 2021</td>
+									<td>Pre - Sale</td>
+									<td>0.00018</td>
+									<td>16%</td>
+									<td>16,000,000,000</td>
+									<td>2,880,000</td>
+									<td>Closed</td>
+								</tr>
+								<tr>
+									<td>Nov 2021</td>
+									<td>Public Sale</td>
+									<td>0.00025</td>
+									<td>1.2%</td>
+									<td>1,200,000,000</td>
+									<td>300,000</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 				<div class="saleRound">
 					<h4 class="text-uppercase">Sales Rounds</h4>
-					<table class="table table-bordered">
-						<thead>
-							<tr>
-								<th>Round</th>
-								<th>Vesting</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Seed Round</td>
-								<td>12 months vesting, 10% release at TGE (Token Generation Event), then unlock with a given rate in each month</td>
-							</tr>
-							<tr>
-								<td>Private Sale</td>
-								<td>10 months vesting, 15% release at TGE (Token Generation Event), then unlock with a given rate in each month</td>
-							</tr>
-							<tr>
-								<td>Pre - Sale</td>
-								<td>9 months vesting, 15% release at TGE (Token Generation Event), then unlock with a given rate in each month</td>
-							</tr>
-							<tr>
-								<td>Public Sale</td>
-								<td>100% release at TGE (Token Generation Event)</td>
-							</tr>
-							<tr>
-								<td>Develop</td>
-								<td>3 years vesting, lock in first 2 years, unlock in 3rd year - equivalently in 12 months</td>
-							</tr>
-							<tr>
-								<td>Technical</td>
-								<td>18 months vesting, lock in first 6 months, then unlock equivalently in 12 months</td>
-							</tr>
-							<tr>
-								<td>Advisor</td>
-								<td>2 years vesting, lock in first 1 years, unlock in 2nd year - equivalently in 12 months</td>
-							</tr>
-							<tr>
-								<td>Ecosystem</td>
-								<td>3 years vesting, equivalently in every month</td>
-							</tr>
-							<tr>
-								<td>Marketing</td>
-								<td>2 years vesting, lock in first 1 years, then unlock equivalently in 12 months</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="table-responsive">
+						<table class="table table-bordered">
+							<thead>
+								<tr>
+									<th>Round</th>
+									<th>Vesting</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Seed Round</td>
+									<td>12 months vesting, 10% release at TGE (Token Generation Event), then unlock with a given rate in each month</td>
+								</tr>
+								<tr>
+									<td>Private Sale</td>
+									<td>10 months vesting, 15% release at TGE (Token Generation Event), then unlock with a given rate in each month</td>
+								</tr>
+								<tr>
+									<td>Pre - Sale</td>
+									<td>9 months vesting, 15% release at TGE (Token Generation Event), then unlock with a given rate in each month</td>
+								</tr>
+								<tr>
+									<td>Public Sale</td>
+									<td>100% release at TGE (Token Generation Event)</td>
+								</tr>
+								<tr>
+									<td>Develop</td>
+									<td>3 years vesting, lock in first 2 years, unlock in 3rd year - equivalently in 12 months</td>
+								</tr>
+								<tr>
+									<td>Technical</td>
+									<td>18 months vesting, lock in first 6 months, then unlock equivalently in 12 months</td>
+								</tr>
+								<tr>
+									<td>Advisor</td>
+									<td>2 years vesting, lock in first 1 years, unlock in 2nd year - equivalently in 12 months</td>
+								</tr>
+								<tr>
+									<td>Ecosystem</td>
+									<td>3 years vesting, equivalently in every month</td>
+								</tr>
+								<tr>
+									<td>Marketing</td>
+									<td>2 years vesting, lock in first 1 years, then unlock equivalently in 12 months</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -344,7 +348,7 @@
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-md-7 text-center">
-						<img src="{{ asset('img/icon-coin-investor.png') }}" width="500">
+						<p><img src="{{ asset('img/icon-coin-investor.png') }}" width="500"></p>
 					</div>
 					<div class="col-md-5">
 						<h4>CMC Coin Investors Map</h4>

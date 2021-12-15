@@ -40,7 +40,7 @@
 					<img src="{{ asset('img/logo.png') }}" alt="">
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
+					<i class="fas fa-bars"></i>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -67,7 +67,7 @@
 		<section class="newsletter bgGradBlue">
 			<div class="container">
 				<div class="row align-items-center">
-		            <div class="col-auto text-end">
+		            <div class="col-md-auto col-sm text-end">
 		                <h6 class="mb-0">Stay ahead</h6>
 		                <div>weekly insights straight to your inbox</div>
 		            </div>
@@ -140,13 +140,7 @@
 					</div>
 				</div>
 				<div class="row align-items-end">
-					<div class="col-md-6">
-						<div class="copyright">
-							<p class="mb-1">Copyright © 2021 - 2022 CMCchain.io All rights reserved</p>
-							<a href="">Privacy Notice</a>   |   <a href="">Legal</a>   |   <a href="">Status</a>   |   <a href="">Cookie Preferences</a>
-						</div>
-					</div>
-					<div class="col-md-6">
+					<div class="col-md-6 order-md-2">
 						<div class="row">
 							<div class="col-md-6 menuFooter">
 								<h6 class="title"><span>Compay</span></h6>
@@ -161,23 +155,29 @@
 							<div class="col-md-6 social">
 								<h6 class="title"><span>Social media</span></h6>
 								<div class="row">
-									<div class="col-md-4">
+									<div class="col-4">
 										<a href="javascript:void(0)" class="item"><i class="fa fa-instagram"></i></a>
 									</div>
-									<div class="col-md-4">
+									<div class="col-4">
 										<a href="javascript:void(0)" class="item"><i class="fa fa-facebook-f"></i></a>
 									</div>
-									<div class="col-md-4">
+									<div class="col-4">
 										<a href="javascript:void(0)" class="item"><i class="fa fa-youtube"></i></a>
 									</div>
-									<div class="col-md-4">
+									<div class="col-4">
 										<a href="javascript:void(0)" class="item"><i class="fa fa-linkedin"></i></a>
 									</div>
-									<div class="col-md-4">
+									<div class="col-4">
 										<a href="javascript:void(0)" class="item"><i class="fa fa-twitter"></i></a>
 									</div>
 								</div>
 							</div>
+						</div>
+					</div>
+					<div class="col-md-6 order-md-1">
+						<div class="copyright">
+							<p class="mb-1">Copyright © 2021 - 2022 CMCchain.io All rights reserved</p>
+							<a href="">Privacy Notice</a>   |   <a href="">Legal</a>   |   <a href="">Status</a>   |   <a href="">Cookie Preferences</a>
 						</div>
 					</div>
 				</div>
@@ -218,25 +218,25 @@
 			  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 			  document.getElementById("countdown").innerHTML ="<div class='row g-0'>" 
-			  + 	"<div class='col-md-3'>"
+			  + 	"<div class='col-3'>"
 			  +			"<div class='item'>"
 			  +				"<div class='number'>" + days + "</div>"
 			  +				"<div class='bottom'>days</div>"
 			  +			"</div>"
 			  +		"</div>"
-			  + 	"<div class='col-md-3'>"
+			  + 	"<div class='col-3'>"
 			  +			"<div class='item'>"
 			  +				"<div class='number'>" + hours + "</div>"
 			  +				"<div class='bottom'>hours</div>"
 			  +			"</div>"
 			  +		"</div>"
-			  + 	"<div class='col-md-3'>"
+			  + 	"<div class='col-3'>"
 			  +			"<div class='item'>"
 			  +				"<div class='number'>" + minutes + "</div>"
 			  +				"<div class='bottom'>min</div>"
 			  +			"</div>"
 			  +		"</div>"
-			  + 	"<div class='col-md-3'>"
+			  + 	"<div class='col-3'>"
 			  +			"<div class='item'>"
 			  +				"<div class='number'>" + seconds + "</div>"
 			  +				"<div class='bottom'>sec</div>"
@@ -245,25 +245,25 @@
 			  + "</div>";
 
 			  document.getElementById("countdown-1").innerHTML ="<div class='row g-0'>" 
-			  + 	"<div class='col-md-3'>"
+			  + 	"<div class='col-3'>"
 			  +			"<div class='item'>"
 			  +				"<div class='number'>" + days + "</div>"
 			  +				"<div class='bottom'>days</div>"
 			  +			"</div>"
 			  +		"</div>"
-			  + 	"<div class='col-md-3'>"
+			  + 	"<div class='col-3'>"
 			  +			"<div class='item'>"
 			  +				"<div class='number'>" + hours + "</div>"
 			  +				"<div class='bottom'>hours</div>"
 			  +			"</div>"
 			  +		"</div>"
-			  + 	"<div class='col-md-3'>"
+			  + 	"<div class='col-3'>"
 			  +			"<div class='item'>"
 			  +				"<div class='number'>" + minutes + "</div>"
 			  +				"<div class='bottom'>min</div>"
 			  +			"</div>"
 			  +		"</div>"
-			  + 	"<div class='col-md-3'>"
+			  + 	"<div class='col-3'>"
 			  +			"<div class='item'>"
 			  +				"<div class='number'>" + seconds + "</div>"
 			  +				"<div class='bottom'>sec</div>"
