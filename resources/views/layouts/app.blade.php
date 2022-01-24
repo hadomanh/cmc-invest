@@ -118,11 +118,11 @@
 							<div class="col-md-6">
 								<h6 class="title"><span>External Resourcus</span></h6>
 								<ul>
-									<li><a href="javascript:void(0)">CMC invest</a></li>
-									<li><a href="javascript:void(0)">CMC foundation </a></li>
-									<li><a href="javascript:void(0)">Diasplat</a></li>
-									<li><a href="javascript:void(0)">Onstora</a></li>
-									<li><a href="javascript:void(0)">Payment Gate </a></li>
+									<li><a target="_blank" href="https://hyrainvest.com">Hyrainvest</a></li>
+									<li><a target="_blank" href="javascript:void(0)">CMC foundation</a></li>
+									<li><a target="_blank" href="https://pindias.com">Pindias</a></li>
+									<li><a target="_blank" href="https://divega.com">Divega</a></li>
+									<li><a target="_blank" href="https://rapitalbank.com">Rapitalbank</a></li>
 								</ul>
 							</div>
 							<div class="col-md-6">
