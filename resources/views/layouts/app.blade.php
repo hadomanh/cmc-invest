@@ -109,7 +109,7 @@
 							<div class="col-md-6">
 								<h6 class="title"><span>Ecosystem</span></h6>
 								<ul>
-									<li><a href="javascript:void(0)">Testnet</a></li>
+									<li><a href="https://testnet.cmcscan.com/" target="_blank">Testnet</a></li>
 									<li><a href="javascript:void(0)">Mainnet</a></li>
 									<li><a href="javascript:void(0)">CMC Wallets</a></li>
 									<li><a href="javascript:void(0)">Wowidex</a></li>
@@ -119,7 +119,7 @@
 								<h6 class="title"><span>External Resourcus</span></h6>
 								<ul>
 									<li><a target="_blank" href="https://hyrainvest.com">Hyrainvest</a></li>
-									<li><a target="_blank" href="javascript:void(0)">CMC foundation</a></li>
+									<li><a target="_blank" href="https://cmcchain.foundation/">CMC foundation</a></li>
 									<li><a target="_blank" href="https://pindias.com">Pindias</a></li>
 									<li><a target="_blank" href="https://divega.com">Divega</a></li>
 									<li><a target="_blank" href="https://rapitalbank.com">Rapitalbank</a></li>
